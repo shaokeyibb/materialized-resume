@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Materialized Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+</head>
+<body>
+<header class="application-header">
+    <div class="header-left">
+        <span class="title">Materialized Resume Demo</span>
+    </div>
+    <div class="header-right">
+
+    </div>
+</header>
+<div class="container">
+    <header class="summary card">
+        <span class="card-headline headline-medium">贺兰星辰</span>
+        <span class="card-subhead body-medium">求职意向：Java 工程师</span>
+        <span class="card-supporting-text body-small">从初中开始学习 Java，能够较为熟练地使用常用的 Java 开发框架，技术栈和工具链。
+                同时了解 Kotlin，Go，Rust，JavaScript 等多门程序语言。
+                有多个开源社区参与和贡献经验，拥有优秀的学习能力和团队沟通能力。</span>
+        <div class="card-actions">
+            <div class="chip">
+                <span class="chip-icon material-symbols-outlined">cake</span>
+                <span class="chip-label label-large">2003/10/27</span>
+            </div>
+            <div class="chip"
+                 onclick="window.location.href='mailto:hikarilan@minecraft.kim'"
+                 style="cursor: pointer;">
+                <span class="chip-icon material-symbols-outlined">mail</span>
+                <span class="chip-label label-large">hikarilan@minecraft.kim</span>
+            </div>
+            <div class="chip"
+                 onclick="window.location.href='tel:+13072645018'"
+                 style="cursor: pointer;">
+                <span class="chip-icon material-symbols-outlined">call</span>
+                <span class="chip-label label-large">+1 (307) 264 5018</span>
+            </div>
+            <div class="chip"
+                 onclick="window.location.href='https://www.minecraft.kim'"
+                 style="cursor: pointer;">
+                <span class="chip-icon material-symbols-outlined">public</span>
+                <span class="chip-label label-large">https://www.minecraft.kim</span>
+            </div>
+            <div class="chip"
+                 onclick="window.location.href='https://github.com/shaokeyibb'"
+                 style="cursor: pointer;">
+                <svg class="chip-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span class="chip-label label-large">shaokeyibb</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="education card">
+            <span class="headline-small">教育经历</span>
+            <div class="list">
+                <div class="education-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">西安财经大学</span>
+                            <span class="list-item-supporting-text body-medium">金融学</span>
+                        </div>
+                        <div class="list-item-header-layout-right">
+                            <span class="list-item-trailing-supporting-text label-small">(2021/09/01 - 2025/06/01)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work card">
+            <span class="headline-small">工作经历</span>
+            <div class="list">
+                <div class="work-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">重庆市远枫物语网络科技有限公司</span>
+                            <span class="list-item-supporting-text body-medium">Java 工程师（实习）</span>
+                        </div>
+                        <div class="list-item-header-layout-right">
+                            <span class="list-item-trailing-supporting-text label-small">(2021/11/01 - 2022/04/01)</span>
+                        </div>
+                    </div>
+                    <div class="list-item-content body-small">
+                        <ul>
+                            <li>- 参与和微软亚洲研究院（MSRA）合作开发，曾在 2021
+                                世界人工智能大会中参展的交互式英语小游戏的服务端游戏逻辑层面开发；
+                            </li>
+                            <li>- 参与与淘宝中国合作的淘宝城 2022 跨年烟花秀的服务端运维和游戏玩法开发；并成功实现通过
+                                K8s 进行服务端实例的弹性缩扩容；
+                            </li>
+                            <li>- 参与公司自研 Minecraft 小游戏《沉梦之渊》的研发和重构。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project card">
+            <span class="headline-small">项目经历</span>
+            <div class="list">
+                <div class="project-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">Solon Admin 应用性能监控工具</span>
+                            <span class="list-item-supporting-text body-medium">全栈开发</span>
+                        </div>
+                        <div class="list-item-header-layout-right">
+                            <span class="list-item-trailing-supporting-text label-small">(2023/05/11 - 至今)</span>
+                        </div>
+                    </div>
+                    <div class="list-item-content body-small">
+                        <ol>
+                            <li>1. 作为 2023
+                                年中科院开源之夏（OSPP）社区项目，向社区和开源之夏组委会提交了完善的项目申请书；
+                            </li>
+                            <li>2. 独立完成架构设计和前后端模板代码部署，引入所需的依赖库并进行开发；</li>
+                            <li>3. 前后端分离设计，使用了 WebSocket 技术，并应用了 IoC, MVVM 等概念。</li>
+                        </ol>
+                    </div>
+                    <div class="list-item-link body-small"
+                         onclick="window.location.href='https://github.com/noear/solon/pull/157/commits'"
+                         style="cursor: pointer;">
+                        <span class="link-icon material-symbols-outlined">link</span>
+                        <span>https://github.com/noear/solon/pull/157/commits</span>
+                    </div>
+                </div>
+                <div class="project-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">Toktik 短视频微服务后端</span>
+                            <span class="list-item-supporting-text body-medium">DevOps, 业务开发, ⽂档编写, 质量保证</span>
+                        </div>
+                        <div class="list-item-header-layout-right">
+                            <span class="list-item-trailing-supporting-text label-small">(2023/02/04 - 2023/02/24)</span>
+                        </div>
+                    </div>
+                    <div class="list-item-content body-small">
+                        <ol>
+                            <li>1.
+                                作为第五届字节跳动青训营大作业项目，与队长和其他组员共同完成了项目文档和答辩，并取得了一等奖的好成绩；
+                            </li>
+                            <li>2. 使用 Go 开发，基于 Kitex 和 Hertz 框架构建，实现了服务发现和可观测性功能；</li>
+                            <li>3. 网关和接口实现分离，通过网关中间件鉴权，通过 RPC 调用与其他微服务交互。</li>
+                        </ol>
+                    </div>
+                    <div class="list-item-link body-small"
+                         onclick="window.location.href='https://github.com/Toktik-Team/toktik'"
+                         style="cursor: pointer;">
+                        <span class="link-icon material-symbols-outlined">link</span>
+                        <span>https://github.com/Toktik-Team/toktik</span>
+                    </div>
+                </div>
+                <div class="project-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">XAUFEHole 前后端分离型匿名树洞</span>
+                            <span class="list-item-supporting-text body-medium">全栈开发</span>
+                        </div>
+                        <div class="list-item-header-layout-right">
+                            <span class="list-item-trailing-supporting-text label-small">(2022/09/30 - 2022/11/10)</span>
+                        </div>
+                    </div>
+                    <div class="list-item-content body-small">
+                        <ol>
+                            <li>1. 采用 Vue3 作为前端，Spring Boot 作为后端；</li>
+                            <li>2. 提供简单的 Redis 缓存支持，并使用由 Sa-Token 驱动的鉴权功能和 Spring Data JPA 提供的
+                                ORM 支持；
+                            </li>
+                            <li>3. 应用了 AoP 和 IoC 等概念以及单例模式，装饰器模式等设计模式。</li>
+                        </ol>
+                    </div>
+                    <div class="list-item-link body-small"
+                         onclick="window.location.href='https://github.com/shaokeyibb/XAUFEHoleBackend'"
+                         style="cursor: pointer;">
+                        <span class="link-icon material-symbols-outlined">link</span>
+                        <span>https://github.com/shaokeyibb/XAUFEHoleBackend</span>
+                    </div>
+                </div>
+                <div class="project-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">GameSenseLib 游戏开发工具库</span>
+                            <span class="list-item-supporting-text body-medium">Java 后端开发</span>
+                        </div>
+                        <div class="list-item-header-layout-right">
+                            <span class="list-item-trailing-supporting-text label-small">(2022/12/09 - 2023/03/21)</span>
+                        </div>
+                    </div>
+                    <div class="list-item-content body-small">
+                        <ol>
+                            <li>1. 通过引入流，单元阶段，模块的概念，简化了 Minecraft 的小游戏开发流程；</li>
+                            <li>2. 以此撰写了 <a href="https://my.minecraft.kim/thinking/874">论一种模块化的 Minecraft
+                                Minigame
+                                游戏架构模型</a> 一文并引起了小范围的讨论。
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="list-item-link body-small"
+                         onclick="window.location.href='https://github.com/shaokeyibb/GameSenseLib'"
+                         style="cursor: pointer;">
+                        <span class="link-icon material-symbols-outlined">link</span>
+                        <span>https://github.com/shaokeyibb/GameSenseLib</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="award card">
+            <span class="headline-small">技能证书</span>
+            <div class="list unordered">
+                <div class="award-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">计算机二级证书</span>
+                            <span class="list-item-supporting-text body-medium">Java 优秀，C 良好</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="award-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">大学英语四级证书</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="certification card">
+            <span class="headline-small">所获荣誉</span>
+            <div class="list unordered">
+                <div class="certification-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">蓝桥杯</span>
+                            <span class="list-item-supporting-text body-medium">软件 B 组 省级二等奖</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-item list-item">
+                    <div class="list-item-header-layout">
+                        <div class="list-item-header-layout-left">
+                            <span class="list-item-headline body-large">第五届字节跳动青训营</span>
+                            <span class="list-item-supporting-text body-medium">优秀营员</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+</div>
+</body>
+</html>
