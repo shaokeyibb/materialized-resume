@@ -79,14 +79,22 @@ main {
 
     padding: 24px;
     border-radius: 12px;
-    border: 1px solid var(--md-sys-color-outline);
-
-    background-color: var(--md-sys-color-surface-variant);
-    color: var(--md-sys-color-on-surface-variant);
 
     line-height: 1.8;
 
     overflow: hidden;
+}
+
+.card:not(.tertiary) {
+    background-color: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface-variant);
+
+    border: 1px solid var(--md-sys-color-outline);
+}
+
+.card.tertiary {
+    background-color: var(--md-sys-color-tertiary-container);
+    color: var(--md-sys-color-on-tertiary-container);
 }
 
 .card-actions {
