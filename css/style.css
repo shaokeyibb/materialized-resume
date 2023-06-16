@@ -1,8 +1,8 @@
-:root {
-    --app-bar-height: 64px;
-    --inset-top: env(safe-area-inset-top, 0px);
-    --top: calc(var(--app-bar-height) + var(--inset-top));
-}
+/*:root {*/
+/*    --app-bar-height: 64px;*/
+/*    --inset-top: env(safe-area-inset-top, 0px);*/
+/*    --top: calc(var(--app-bar-height) + var(--inset-top));*/
+/*}*/
 
 body {
     font-family: 'Noto Color Emoji', sans-serif;
@@ -16,44 +16,30 @@ a {
     text-decoration: underline;
 }
 
-.application-header {
-    position: fixed;
-    top: var(--inset-top);
-    left: 0;
-    right: 0;
-    height: var(--top);
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--md-sys-color-on-background);
-    border-bottom: var(--md-sys-color-outline) solid 1px;
-    z-index: 1;
-    background-color: var(--md-sys-color-background);
+/*.application-header {*/
+/*    position: fixed;*/
+/*    top: var(--inset-top);*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    height: var(--top);*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    color: var(--md-sys-color-on-background);*/
+/*    border-bottom: var(--md-sys-color-outline) solid 1px;*/
+/*    z-index: 1;*/
+/*    background-color: var(--md-sys-color-background);*/
 
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-body.light-theme .dark-mode-switch span::before {
-    position: relative;
-    content: "\e51c";
-}
-
-body.light-theme .dark-mode-switch span::before {
-    position: relative;
-    top: 0;
-    left: 0;
-
-    content: "\e518";
-}
-
+/*    padding-left: 1rem;*/
+/*    padding-right: 1rem;*/
+/*}*/
 
 .container {
     max-width: 960px;
     padding: 2rem;
 
-    margin: var(--top) auto 0;
+    /*margin: var(--top) auto 0;*/
 }
 
 .container {
