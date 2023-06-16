@@ -177,7 +177,7 @@ main {
 }
 
 .list.unordered {
-    gap: 0px;
+    gap: 0;
 }
 
 .list.unordered .list-item-headline::before {
