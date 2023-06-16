@@ -208,11 +208,11 @@ main {
 }
 
 @media screen and (max-width: 960px) {
-    .chip {
-        padding: 0;
+    .chip.shrinkable {
+        padding-right: 0;
     }
 
-    .chip .chip-label {
+    .chip.shrinkable .chip-label {
         display: none;
     }
 }
