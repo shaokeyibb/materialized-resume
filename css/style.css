@@ -211,34 +211,6 @@ main {
     }
 }
 
-@media print {
-    :root {
-        --app-bar-height: 0;
-    }
-
-    body {
-        background-color: #FFF
-    }
-
-    .application-header {
-        display: none;
-    }
-
-    .list-item-header-layout {
-        flex-direction: row;
-    }
-
-    /*.list-item-header-layout-left {*/
-    /*    flex-direction: row;*/
-    /*    justify-content: space-between;*/
-    /*    align-items: center;*/
-    /*    gap: 5px;*/
-    /*}*/
-    .card-actions {
-        flex-wrap: wrap;
-    }
-}
-
 .section {
     margin: 48px 0;
 }
@@ -266,10 +238,4 @@ main {
 
 .section-plain .section-content {
     margin: 0 24px;
-}
-
-@media print {
-    .section {
-        margin: 0;
-    }
 }
