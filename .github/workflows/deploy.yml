@@ -11,18 +11,27 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [20.x]
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.6.5
+
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      - run: pnpm install
 
-      - name: Build project
-        run: npm run build
+      - run: pnpm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
