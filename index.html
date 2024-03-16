@@ -175,36 +175,41 @@
                         </div>
                     </div>
                     <div class="list-item-content body-medium">
-                        <p><b>项目描述：</b>一款基于微服务的 Web
+                        <section>
+                            <b>项目描述：</b>一款基于微服务的 Web
                             轻论坛程序，用户可在论坛中进行注册登录，发帖回帖，搜索帖子等操作；由本人独立完成前后端架构设计和开发，并持续进行功能更新和维护。
-                        </p>
-                        <p><b>技术栈：</b></p>
-                        <ul>
-                            <li><b>后端：</b>Spring Boot, Spring Cloud, Spring Cloud Gateway, Spring Data JPA, gRPC,
-                                Sa-Token,
-                                Lombok, PostgreSQL, Redis, Consul, MinIO, Docker, Gradle.
-                            </li>
-                            <li><b>前端：</b>Vue3, Nuxt, Tailwind CSS, VueUse, Pinia, ByteMD, Webauthn API, pnpm.</li>
-                        </ul>
-                        <p><b>技术亮点：</b></p>
-                        <ul>
-                            <li>在微服务网关中通过 Spring Webflux 技术添加鉴权中间件，实现下游微服务无感鉴权，与 Sa-Token
-                                解耦合。
-                            </li>
-                            <li>根据浏览器 Webauthn API
-                                规范实现并接入了无密码安全登录（Passwordless）和平台密钥登录（Passkey）。
-                            </li>
-                            <li>建立全局异常处理机制，并通过 AoP 技术切入业务代码以实现模板代码与业务代码分离。</li>
-                            <li>使用 Redis 进行数据缓存，gRPC 进行微服务数据传输，Consul 进行服务发现，MinIO
-                                提供对象存储。
-                            </li>
-                        </ul>
+                        </section>
+                        <section>
+                            <b>技术栈：</b>
+                            <ul>
+                                <li><b>后端：</b>Spring Boot, Spring Cloud, Spring Cloud Gateway, Spring Data JPA, gRPC,
+                                    Sa-Token,
+                                    Lombok, PostgreSQL, Redis, Consul, MinIO, Docker, Gradle.
+                                </li>
+                                <li><b>前端：</b>Vue3, Nuxt, Tailwind CSS, VueUse, Pinia, ByteMD, Webauthn API, pnpm.
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <b>技术亮点：</b>
+                            <ul>
+                                <li>在微服务网关中通过 Spring Webflux 技术添加鉴权中间件，实现下游微服务无感鉴权，与
+                                    Sa-Token
+                                    解耦合。
+                                </li>
+                                <li>根据浏览器 Webauthn API
+                                    规范实现并接入了无密码安全登录（Passwordless）和平台密钥登录（Passkey）。
+                                </li>
+                                <li>建立全局异常处理机制，并通过 AoP 技术切入业务代码以实现模板代码与业务代码分离。</li>
+                                <li>使用 Redis 进行数据缓存，gRPC 进行微服务数据传输，Consul 进行服务发现，MinIO
+                                    提供对象存储。
+                                </li>
+                            </ul>
+                        </section>
                     </div>
-                    <div class="list-item-link body-small"
-                         onclick="window.location.href='https://github.com/shaokeyibb/NeraBBS'"
-                         style="cursor: pointer;">
+                    <div class="list-item-link body-small">
                         <span class="link-icon material-symbols-outlined">link</span>
-                        <span>https://github.com/shaokeyibb/NeraBBS</span>
+                        <a href="https://github.com/shaokeyibb/NeraBBS">https://github.com/shaokeyibb/NeraBBS</a>
                     </div>
                 </div>
                 <div class="project-item list-item card">
@@ -218,27 +223,33 @@
                         </div>
                     </div>
                     <div class="list-item-content body-medium">
-                        <p><b>项目描述：</b>使用 Go
+                        <section>
+                            <b>项目描述：</b>使用 Go
                             语言开发的微服务短视频平台后端，用户可通过此平台上传和观看视频并进行点赞和评论；作为第五届字节跳动青训营项目，与团队合作完成相关文档和项目答辩，最终取得一等奖的好成绩。
-                        </p>
-                        <p><b>技术栈：</b>Go, Kitex, Hertz, GORM, PostgreSQL, Redis, Consul, OpenTelemetry, Grafana,
-                            VictoriaMetrics, FFmpeg, Docker, Kubernetes, Amazon S3.</p>
-                        <p><b>技术亮点：</b></p>
-                        <ul>
-                            <li>网关和接口实现分离，使用网关中间件鉴权以保证下游服务透明和接口低耦合。</li>
-                            <li>通过 RPC 调用与其他微服务交互，同时支持基于 Consul 的服务发现。</li>
-                            <li>全链路采用 goroutine 协程进行微服务接口调用，在保证并发安全的同时大幅提高 IO
-                                效率，降低阻塞时间。
-                            </li>
-                            <li>通过建立良好的可观测性系统，精准排查项目性能瓶颈以进行针对性的接口优化。</li>
-                            <li>通过 testify 和 sqlmock 建立完善的单元测试和 E2E 测试机制，确保接口符合预期正常运行。</li>
-                        </ul>
+                        </section>
+                        <section>
+                            <b>技术栈：</b>Go, Kitex, Hertz, GORM, PostgreSQL, Redis, Consul, OpenTelemetry,
+                            Grafana,
+                            VictoriaMetrics, FFmpeg, Docker, Kubernetes, Amazon S3.
+                        </section>
+                        <section>
+                            <b>技术亮点：</b>
+                            <ul>
+                                <li>网关和接口实现分离，使用网关中间件鉴权以保证下游服务透明和接口低耦合。</li>
+                                <li>通过 RPC 调用与其他微服务交互，同时支持基于 Consul 的服务发现。</li>
+                                <li>全链路采用 goroutine 协程进行微服务接口调用，在保证并发安全的同时大幅提高 IO
+                                    效率，降低阻塞时间。
+                                </li>
+                                <li>通过建立良好的可观测性系统，精准排查项目性能瓶颈以进行针对性的接口优化。</li>
+                                <li>通过 testify 和 sqlmock 建立完善的单元测试和 E2E
+                                    测试机制，确保接口符合预期正常运行。
+                                </li>
+                            </ul>
+                        </section>
                     </div>
-                    <div class="list-item-link body-small"
-                         onclick="window.location.href='https://github.com/Toktik-Team/toktik'"
-                         style="cursor: pointer;">
+                    <div class="list-item-link body-small">
                         <span class="link-icon material-symbols-outlined">link</span>
-                        <span>https://github.com/Toktik-Team/toktik</span>
+                        <a href="https://github.com/Toktik-Team/toktik">https://github.com/Toktik-Team/toktik</a>
                     </div>
                 </div>
                 <div class="project-item list-item card">
@@ -252,27 +263,32 @@
                         </div>
                     </div>
                     <div class="list-item-content body-medium">
-                        <p><b>项目描述：</b>基于 Solon 框架的应用性能监控工具，支持应用程序事件流，环境变量，元数据等信息的展示；分为
+                        <section>
+                            <b>项目描述：</b>基于 Solon 框架的应用性能监控工具，支持应用程序事件流，环境变量，元数据等信息的展示；分为
                             Web 前端（信息展示），客户端（信息采集），服务端（信息处理）三部分；作为 2023
                             年中科院开源之夏（OSPP）社区项目，撰写和提交完善的项目申请书并获得通过。
-                        </p>
-                        <p><b>技术栈：</b></p>
-                        <ul>
-                            <li><b>后端：</b>Solon, Solon Cloud, Solon API, Websocket, okhttp, Lombok, Maven.</li>
-                            <li><b>前端：</b>Vue3, Vue Router, Vue I18n, Pinia, Apache ECharts, Arco Design, yarn.</li>
-                        </ul>
-                        <p><b>技术亮点：</b></p>
-                        <ul>
-                            <li>使用 WebSocket 技术完成前后端分离设计，并应用 IoC, MVVM 等设计模式。</li>
-                            <li>通过发送心跳包的方式检测客户端在线情况，支持在优雅退出的情况下自动注销客户端实例。</li>
-                            <li>支持分布式服务发现和配置管理，从配置中心向下游服务分发配置文件。</li>
-                        </ul>
+                        </section>
+                        <section>
+                            <b>技术栈：</b>
+                            <ul>
+                                <li><b>后端：</b>Solon, Solon Cloud, Solon API, Websocket, okhttp, Lombok, Maven.</li>
+                                <li><b>前端：</b>Vue3, Vue Router, Vue I18n, Pinia, Apache ECharts, Arco Design, yarn.
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <b>技术亮点：</b>
+                            <ul>
+                                <li>使用 WebSocket 技术完成前后端分离设计，并应用 IoC, MVVM 等设计模式。</li>
+                                <li>通过发送心跳包的方式检测客户端在线情况，支持在优雅退出的情况下自动注销客户端实例。
+                                </li>
+                                <li>支持分布式服务发现和配置管理，从配置中心向下游服务分发配置文件。</li>
+                            </ul>
+                        </section>
                     </div>
-                    <div class="list-item-link body-small"
-                         onclick="window.location.href='https://github.com/noear/solon-admin'"
-                         style="cursor: pointer;">
+                    <div class="list-item-link body-small">
                         <span class="link-icon material-symbols-outlined">link</span>
-                        <span>https://github.com/noear/solon-admin</span>
+                        <a href="https://github.com/noear/solon-admin">https://github.com/noear/solon-admin</a>
                     </div>
                 </div>
             </div>
