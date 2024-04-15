@@ -12,5 +12,6 @@
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.33",
     "vite": "^5.1.6"
-  }
+  },
+  "packageManager": "pnpm@8.15.7"
 }
