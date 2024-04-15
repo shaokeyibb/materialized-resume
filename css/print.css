@@ -3,6 +3,14 @@
         background-color: #FFF
     }
 
+    .card {
+        background-color: unset !important;
+        border: unset !important;
+
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     .application-header {
         display: none;
     }
@@ -17,6 +25,10 @@
 
     .section {
         margin: 0;
+    }
+
+    .section-header {
+        margin-bottom: 12px;
     }
 
     :root {
