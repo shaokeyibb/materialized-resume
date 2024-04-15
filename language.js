@@ -3,13 +3,13 @@ const i18nPages = [
         acceptLanguages: [
             "zh"
         ],
-        page: "/zh.html"
+        page: "/zh/"
     },
     {
         acceptLanguages: [
             "en"
         ],
-        page: "/en.html"
+        page: "/en/"
     }
 ]
 
