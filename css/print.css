@@ -3,6 +3,10 @@
         background-color: #FFF
     }
 
+    .show-when-dark-only {
+        display: none;
+    }
+
     .card {
         background-color: unset !important;
         border: unset !important;

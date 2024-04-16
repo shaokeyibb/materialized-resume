@@ -295,13 +295,13 @@ b {
     font-weight: 700;
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
     .show-when-light-only {
         display: none;
     }
 }
 
-@media (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: light) {
     .show-when-dark-only {
         display: none;
     }
