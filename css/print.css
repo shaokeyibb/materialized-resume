@@ -16,7 +16,7 @@
     }
 
     .list-item-header-layout {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .card-actions {
