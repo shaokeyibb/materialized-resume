@@ -17,6 +17,18 @@
 </head>
 <body>
 <div class="container">
+    <div class="top-app-bar hidden-when-print">
+        <div class="top-app-bar-leading"></div>
+        <div class="top-app-bar-headline"></div>
+        <div class="top-app-bar-trailing">
+            <span class="top-app-bar-trailing-icon material-symbols-outlined"
+                  onclick="nextLanguage()"
+                  style="cursor: pointer;">language</span>
+            <span class="top-app-bar-trailing-icon material-symbols-outlined"
+                  onclick="window.print()"
+                  style="cursor: pointer;">print</span>
+        </div>
+    </div>
     <header class="summary card tertiary">
         <span class="card-headline display-large">贺兰星辰</span>
         <div class="card-actions">

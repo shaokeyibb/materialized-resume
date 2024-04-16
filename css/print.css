@@ -11,7 +11,7 @@
         padding-bottom: 0;
     }
 
-    .application-header {
+    .hidden-when-print {
         display: none;
     }
 
