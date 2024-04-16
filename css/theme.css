@@ -1,5 +1,9 @@
 @import url(tokens.css);
 @import url(colors.module.css);
 @import url(typography.module.css);
-@import url(theme.light.css) (prefers-color-scheme: light);
-@import url(theme.dark.css) screen and (prefers-color-scheme: dark);
+@import url(light.css) (prefers-color-scheme: light);
+@import url(dark.css) screen and (prefers-color-scheme: dark);
+@import url(light-hc.css) screen and (prefers-color-scheme: light) and (prefers-contrast: more);
+@import url(light-mc.css) screen and (prefers-color-scheme: light) and (prefers-contrast: less);
+@import url(dark-hc.css) screen and (prefers-color-scheme: dark) and (prefers-contrast: more);
+@import url(dark-mc.css) screen and (prefers-color-scheme: dark) and (prefers-contrast: less);
