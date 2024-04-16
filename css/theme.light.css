@@ -16,6 +16,7 @@
  --md-sys-color-error-container: var(--md-sys-color-error-container-light);
  --md-sys-color-on-error-container: var(--md-sys-color-on-error-container-light);
  --md-sys-color-outline: var(--md-sys-color-outline-light);
+ --md-sys-color-outline-variant: var(--md-sys-color-outline-variant-light);
  --md-sys-color-background: var(--md-sys-color-background-light);
  --md-sys-color-on-background: var(--md-sys-color-on-background-light);
  --md-sys-color-surface: var(--md-sys-color-surface-light);
