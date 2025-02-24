@@ -13,34 +13,35 @@ const i18nPages = [
     }
 ]
 
-function getCurrentLanguage(){
+function getCurrentLanguage() {
     return (i18nPages.find(it => it.acceptLanguages.includes(new Intl.Locale(navigator.language).language)) ?? i18nPages[0])
 }
 
-function getCurrentPage(){
-    return (i18nPages.find(it => it.page == window.location.pathname))
+function getCurrentPage() {
+    return (i18nPages.find(it => it.page === window.location.pathname))
 }
 
-function redirectToLanagugePage(page){
+function redirectToLanguagePage(page) {
     window.location.replace(page.page)
 }
 
-function goToLanguagePage(page){
+function goToLanguagePage(page) {
     window.location.href = page.page
 }
 
-function changeLanaguge(changeWhenInSubpage) {
+function changeLanguage(changeWhenInSubpage) {
     const page = getCurrentLanguage()
-    if ((changeWhenInSubpage || window.location.pathname == "/") && page != getCurrentPage()) {
-        redirectToLanagugePage(page)
+    if ((changeWhenInSubpage || window.location.pathname === "/") && page !== getCurrentPage()) {
+        redirectToLanguagePage(page)
     }
 }
 
-export function nextLanguage(){
+export function nextLanguage() {
     goToLanguagePage(i18nPages[(i18nPages.indexOf(getCurrentPage()) + 1) % i18nPages.length])
 }
+
 globalThis.nextLanguage = nextLanguage
 
-window.addEventListener('languagechange', () => changeLanaguge(true))
+window.addEventListener('languagechange', () => changeLanguage(true))
 
-changeLanaguge(false)
+changeLanguage(false)
